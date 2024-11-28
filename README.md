@@ -8,22 +8,6 @@ Given a KQL query representing a time series table, the tool creates a Grafana d
 
 ---
 
-## Workflow Overview
-
-The workflow of the tool can be divided into the following steps:
-
-1. **Configuration Setup**: Environment variables are loaded and configured via `.env` and `config.py`. Variables include Azure authentication details, cluster URLs, Grafana API credentials, and the KQL base query.
-
-2. **ADX Connection**: The `kusto_connection.py` script connects to ADX using Azure credentials, enabling access to databases and tables.
-
-3. **Query Generation**: Functions in `anomaly_detection.py` create KQL queries for detecting anomalies, decomposing series into components and summarizing results.
-
-4. **Dashboard Creation**: The `dashboard.py` script dynamically generates Grafana dashboards by sending the queries to the Grafana API. Each panel in the dashboard corresponds to a specific query.
-
-5. **Execution**: The `main.py` script orchestrates the end to end process, ensuring proper execution of all steps.
-
----
-
 ## Features
 
 - **Dynamic Time Series Analysis**: Automatically detect anomalies, trends and seasonality in time series data using KQL functions such as `series_decompose` and `series_decompose_anomalies`.
