@@ -83,12 +83,3 @@ Orchestrates the entire process:
 4. **Access the Dashboard**:
 
    - Log in to your Grafana instance and view the newly created dashboard.
-
----
-
-## Future Improvements
-
-- **Real Time Alerts**: Enable notifications for detected anomalies.
-- **Dynamic Column Detection**: Support tables with varying column arrangements.
-- **Enhanced UI**: Develop a graphical interface for configuring inputs and thresholds.
-- **Dimension Prioritization**: Automatically filter irrelevant dimensions for better focus.
