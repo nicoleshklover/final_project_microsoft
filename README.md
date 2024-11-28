@@ -1,4 +1,4 @@
-# Anomaly Detection Tool
+# Anomaly and Regression Detection Tool
 
 ## Introduction
 
